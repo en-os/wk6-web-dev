@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>MediGas Solutions</title>
+  <link rel="stylesheet" href="styles4.css" />
+  <script src="script4.js"></script>
+</head>
+<body>
+  <div class="page-wrapper">
+    <button id="settings-toggle" class="settings-toggle" aria-label="Settings">⚙️</button>
+    
+    <header class="site-header">
+      <div class="header-content">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Oxygen_cylinder_icon.svg/1024px-Oxygen_cylinder_icon.svg.png"
+             alt="MediGas Solutions Logo" class="logo">
+        <h1>MediGas Solutions</h1>
+      </div>
+      <nav class="main-nav">
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-list">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#production">Our Process</a></li>
+          <li><a href="#order">Order Form</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <!-- About Us -->
+      <section id="about" class="content-section">
+        <details>
+          <summary><strong>About Us</strong></summary>
+          <div class="about-content">
+            <p>
+              MediGas Solutions is a trusted provider of <strong>medical-grade oxygen</strong> for hospitals and home therapy.
+              Our process meets international standards for safety and reliability.
+            </p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Oxygen_cylinders_in_hospital.jpg"
+                 alt="Medical Oxygen Cylinders" class="about-image">
+          </div>
+        </details>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="content-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">How do I know which oxygen product I need?</button>
+            <div class="faq-answer">
+              <p>Our medical professionals can help assess your needs. Generally, home therapy patients use portable 1.5 m³ cylinders, while hospitals typically require the larger 6.8 m³ cylinders or concentrators.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">What safety precautions should I take with oxygen?</button>
+            <div class="faq-answer">
+              <p>Keep oxygen away from open flames, don't smoke near oxygen equipment, ensure proper ventilation, and have your equipment regularly inspected by our technicians.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How often do I need to refill my oxygen cylinder?</button>
+            <div class="faq-answer">
+              <p>This depends on your usage rate. A typical 1.5 m³ cylinder lasts about 6-8 hours at 2 liters per minute. We recommend keeping a spare cylinder.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Services -->
+      <section id="services" class="content-section">
+        <details>
+          <summary><strong>Our Services</strong></summary>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">💨</div>
+              <h3>Oxygen Production</h3>
+              <p>High-purity medical oxygen production meeting international quality standards</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">🏥</div>
+              <h3>Hospital Supply</h3>
+              <p>Complete bulk oxygen solutions including pipeline installation and maintenance</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">🏠</div>
+              <h3>Home Delivery</h3>
+              <p>Reliable home oxygen delivery service for therapy patients</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">🔧</div>
+              <h3>Equipment Maintenance</h3>
+              <p>Professional maintenance of oxygen storage and delivery systems</p>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <!-- Products Section -->
+      <section id="products" class="content-section">
+        <h2>Our Medical Oxygen Products</h2>
+        
+        <div class="products-intro">
+          <p>We provide high-quality medical oxygen solutions for both clinical and home use. All products meet international safety standards.</p>
+        </div>
+
+        <div class="products-filter">
+          <label for="product-type">Filter by:</label>
+          <select id="product-type" class="filter-select">
+            <option value="all">All Products</option>
+            <option value="cylinder">Oxygen Cylinders</option>
+            <option value="equipment">Oxygen Equipment</option>
+            <option value="service">Refill Services</option>
+          </select>
+        </div>
+
+        <div class="products-grid">
+          <!-- Product cards will be inserted here by JavaScript -->
+        </div>
+
+        <div class="safety-notice">
+          <div class="notice-icon">⚠️</div>
+          <p>All oxygen products require proper medical certification for purchase. Delivery available within 24 hours for emergency cases.</p>
+        </div>
+      </section>
+
+      <!-- Oxygen Production Video Section -->
+      <section id="production" class="content-section video-section">
+        <h2>Our Oxygen Production Process</h2>
+        
+        <div class="video-container">
+          <div class="video-wrapper">
+            <video id="oxygen-video" controls poster="https://images.unsplash.com/photo-1581093057305-25ad2a3e0e2f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
+              <source src="https://cdn.pixabay.com/download/video/2022/05/16/video-7132f5a8df.mp4?attachment" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+            <div class="video-controls">
+              <button class="video-btn play-pause" aria-label="Play/Pause">▶️</button>
+              <input type="range" class="video-progress" value="0" min="0" max="100" step="0.1">
+              <button class="video-btn mute" aria-label="Mute/Unmute">🔊</button>
+              <button class="video-btn fullscreen" aria-label="Fullscreen">⛶</button>
+            </div>
+          </div>
+          
+          <div class="video-description">
+            <h3>How We Produce Medical-Grade Oxygen</h3>
+            <p>Our state-of-the-art facility uses cryogenic distillation to produce 99.5% pure oxygen meeting all medical standards. Watch the process from air compression to final bottling.</p>
+            <div class="video-chapters">
+              <button class="chapter-btn" data-time="0">Introduction</button>
+              <button class="chapter-btn" data-time="30">Air Compression</button>
+              <button class="chapter-btn" data-time="60">Distillation</button>
+              <button class="chapter-btn" data-time="120">Quality Check</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-footnote">
+          <p><strong>Note:</strong> All our production facilities are ISO 13485 certified for medical device manufacturing.</p>
+        </div>
+      </section>
+
+      <!-- Order Form -->
+      <section id="order" class="content-section">
+        <h2>Place Your Order</h2>
+        <form class="order-form">
+          <div class="form-grid">
+            <fieldset class="customer-info">
+              <legend>Customer Information</legend>
+              <div class="form-group">
+                <label>Customer ID:</label>
+                <input type="text" id="customer-id" value="CUST-001" readonly>
+              </div>
+              <div class="form-group">
+                <label>Full Name:</label>
+                <input type="text" name="fullname" placeholder="e.g. John Doe" required>
+              </div>
+              <div class="form-group">
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="e.g. johndoe@example.com" required>
+              </div>
+              <div class="form-group">
+                <label>Phone:</label>
+                <input type="tel" name="phone" placeholder="e.g. 0712345678" required>
+              </div>
+            </fieldset>
+
+            <fieldset class="product-selection">
+              <legend>Product Selection</legend>
+              <div class="form-group">
+                <label>Product:</label>
+                <select id="product-select" name="product" required>
+                  <option value="">--Select a product--</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Quantity:</label>
+                <input type="number" name="quantity" min="1" value="1" required>
+              </div>
+            </fieldset>
+
+            <fieldset class="delivery-details">
+              <legend>Delivery Details</legend>
+              <div class="form-group">
+                <label>Address:</label>
+                <textarea name="address" rows="4" required></textarea>
+              </div>
+              <div class="form-group">
+                <label>Preferred Delivery Date:</label>
+                <input type="date" name="delivery_date" required>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form-actions">
+            <button type="submit">Submit Order</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="footer-content">
+        <p>Contact Us: +254 712 345 678 | info@medigas.co.ke</p>
+        <p>&copy; <span id="current-year"></span> MediGas Solutions. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Settings Panel -->
+    <div id="settings-panel" class="settings-panel">
+      <div class="settings-header">
+        <h3>Settings</h3>
+        <button class="close-settings">&times;</button>
+      </div>
+      <div class="settings-content">
+        <div class="setting-group">
+          <label>
+            <input type="checkbox" id="dark-mode-toggle">
+            Dark Mode
+          </label>
+        </div>
+        <div class="setting-group">
+          <label for="font-size">Font Size</label>
+          <select id="font-size">
+            <option value="small">Small</option>
+            <option value="medium" selected>Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div class="setting-group">
+          <label>
+            <input type="checkbox" id="animations-toggle" checked>
+            Enable Animations
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
